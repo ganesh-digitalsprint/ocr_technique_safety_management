@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+pymupdf
+pytesseract
+pdf2image
+pymysql
+sqlalchemy
+python-dotenv
+pillow
+pydantic
+cryptography
