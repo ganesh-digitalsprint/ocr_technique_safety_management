@@ -48,3 +48,4 @@ def get_all_identity_cards(
 def health_check():
     """Health check endpoint"""
     return {"status": "healthy", "message": "Identity Card OCR API is running"}
+

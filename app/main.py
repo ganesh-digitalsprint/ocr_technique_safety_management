@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from app.routes import identity_card
+from app.routes import identity_card, weather
 from app.config.database import create_tables
 from app.core.config import settings
 import os
@@ -26,6 +26,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(identity_card.router)
+app.include_router(weather.router)
 
 # Global exception handler
 @app.exception_handler(Exception)
